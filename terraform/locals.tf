@@ -6,7 +6,7 @@ locals {
     workers = 2
     instancia = "Standard_D2_v2"
     subscripcion = "Azure subscription 1"
-    #az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/df66ee14-34fe-4b86-bd0f-ed07d8ab379a/resourceGroups/<resourceGroupName>"
-    clientid = "e2e30284-d6de-48e4-ba8c-6c43ad828362"
-    clientsecret = "kmJNpTHI.EdQZ1DxhVs3UAnrs~G7hJdex~"
+    #az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>"
+    clientid = "a08cefc4-d30a-4cca-b8e1-7e8ec5356c6a"
+    clientsecret = "o_nUopOwwEocZbuE78dk~mJz_~-~aY91r6"
 }
