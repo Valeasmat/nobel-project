@@ -37,7 +37,7 @@
     selector:
       app: nobel-project
     ports:
-    - port: 70
+    - port: 8070
       targetPort: 9001
     type: LoadBalancer
 
