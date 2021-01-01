@@ -9,4 +9,6 @@ RUN apk add --no-cache tzdata
 ENV TZ=America/Lima
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY --from=builder /app/target/nobel-project.jar /
+EXPOSE 9090
+#NO PONER EXPOSE PARA KUBECTL
 CMD ["java","-jar","/nobel-project.jar"]
